@@ -1,0 +1,37 @@
+$accent: linear-gradient(115.11deg, #F32C6D 10.12%, #CB1D95 100.01%);
+$black: #333333;
+$blue: #77B2D3;
+$white: #ffffff;
+$bg-accent: #F3F1FE;
+$bg: #F7F6FF;
+
+
+%manrope-300 {
+  font-family: 'Manrope-Light', sans-serif;
+  font-weight: 300;
+}
+
+%manrope-400 {
+  font-family: 'Manrope-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%manrope-500 {
+  font-family: 'Manrope-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%manrope-600 {
+  font-family: 'Manrope-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%manrope-700 {
+  font-family: 'Manrope-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%manrope-800 {
+  font-family: 'Manrope-ExtraBold', sans-serif;
+  font-weight: 800;
+}

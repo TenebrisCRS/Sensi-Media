@@ -115,10 +115,6 @@
   }
 
   &__title {
-    @extend %manrope-700;
-    font-size: 38px;
-    line-height: 1.26;
-
     margin-bottom: 33px;
   }
 
@@ -160,9 +156,6 @@
   padding: 76px 0;
 
   &__title {
-    @extend %manrope-700;
-    font-size: 38px;
-    line-height: 1.26;
     text-transform: uppercase;
 
     margin-bottom: 40px;
@@ -257,8 +250,139 @@
     font-size: 30px;
     line-height: 1.2;
   }
+}
+
+.contacts {
+  padding: 50px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content-box {
+
+  }
+
+  &__title {
+    margin-bottom: 22px;
+    text-transform: uppercase;
+  }
+
+  &__form-text {
+    @extend %manrope-400;
+    margin-bottom: 22px;
+  }
+
+  &__form-input + .contacts__form-input {
+    margin-left: 30px;
+  }
+
+  &__form-input,
+  &__form-textarea {
+    padding: 17px 20px;
+    width: 100%;
+
+    border: none;
+    outline: transparent;
+    background-color: $white;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+
+    &::placeholder {
+      @extend %manrope-300;
+    }
+  }
+
+  &__form-input {
+    max-width: 270px;
+    margin-bottom: 20px;
+  }
+
+  &__form-textarea {
+    max-width: 100%;
+    height: 140px;
+    resize: none;
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  &__form-checkbox {
+    @extend %checkbox-hidden;
+
+    &:checked + .contacts__visual-checkbox{
+      &::before {
+        content: '';
+
+        background-image: url('../images/icons/check-form.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        position: absolute;
+        width: 16px;
+        height: 18px;
+        top: 6px;
+        left: 8px;
+      }
+    }
+  }
+
+  &__form-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+  }
+
+  &__visual-checkbox {
+    width: 32px;
+    height: 32px;
+    background-color: $white;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+
+    display: inline-block;
+    position: relative;
+    margin-right: 12px;
+
+  }
+
+  &__agreement-text {
+    @extend %manrope-300;
+  }
+
+  &__agreement-link {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background: $accent;
+      left: 0;
+      bottom: 0;
+
+      opacity: 0;
+      transform: translateY(5px);
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
 
 
+  &__img {
+    object-fit: cover;
+    margin-right: -35px;
+    border-radius: 20px;
+  }
 }
 
 

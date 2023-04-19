@@ -45,4 +45,8 @@ a {
   }
 }
 
-
+.title {
+  @extend %manrope-700;
+  font-size: 38px;
+  line-height: 1.26;
+}

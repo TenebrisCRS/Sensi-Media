@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="18px" viewBox="0 0 16 18" version="1.1">
+<defs>
+  <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="10.12%" stop-color="#F32C6D"/>
+    <stop offset="100.01%" stop-color="#CB1D95"/>
+  </linearGradient>
+  </defs>
+<g id="surface1">
+<path fill="url(#Gradient2)" d="M 15.664062 3.707031 C 16.109375 4.144531 16.109375 4.859375 15.664062 5.296875 L 6.519531 14.296875 C 6.074219 14.738281 5.351562 14.738281 4.902344 14.296875 L 0.332031 9.796875 C -0.113281 9.359375 -0.113281 8.644531 0.332031 8.207031 C 0.777344 7.765625 1.503906 7.765625 1.949219 8.207031 L 5.714844 11.90625 L 14.050781 3.707031 C 14.496094 3.265625 15.222656 3.265625 15.667969 3.707031 Z M 15.664062 3.707031 "/>
+</g>
+</svg>

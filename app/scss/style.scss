@@ -5,7 +5,261 @@
 @import 'global';
 
 
+.header-top {
+  background-color: $white;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 0;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__nav {
+    @extend %manrope-500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &__nav-list {
+    max-width: 385px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav-item+.header-top__nav-item {
+    margin-left: 30px;
+  }
+}
+
+.header-bottom {
+  padding: 80px 0 90px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content-box {
+    max-width: 700px;
+  }
+
+  &__title {
+    @extend %manrope-800;
+    font-size: 45px;
+    line-height: 1.44;
+
+    margin-bottom: 15px;
+
+    span {
+      text-transform: uppercase;
+      display: inline-block;
+      @extend %manrope-700;
+    }
+  }
+
+  &__subtitle {
+    line-height: 1.5;
+
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item+.header-bottom__item {
+    margin-left: 10px;
+  }
+
+  &__item-text {
+    color: $white;
+
+    background-color: $blue;
+    border-radius: 250px;
+
+    &:nth-child(1) {
+      padding: 14px 30px;
+    }
+
+    &:nth-child(2) {
+      padding: 14px 13px 14px 23px;
+    }
+
+    &:nth-child(3) {
+      padding: 14px 41px;
+    }
+  }
+
+  &__img {
+    max-width: 573px;
+    object-fit: cover;
+    margin-right: -50px;
+  }
+}
+
+.features {
+  &__inner {
+    padding: 40px 55px 55px 55px;
+    background-color: $white;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+  }
+
+  &__title {
+    @extend %manrope-700;
+    font-size: 38px;
+    line-height: 1.26;
+
+    margin-bottom: 33px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    border-right: 1px solid #C7C7C7;
+    padding: 0 50px;
+
+    &:nth-child(1) {
+      padding-left: 0;
+    }
+
+    &:nth-child(4) {
+      border: none;
+    }
+  }
+
+  &__item-title {
+    @extend %manrope-800;
+    font-size: 40px;
+    line-height: 1.2;
+    @extend %accent-text;
+
+    margin-bottom: 3px;
+  }
+
+  &__item-subtitle {
+    @extend %manrope-500;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+}
+
+.services {
+  padding: 76px 0;
+
+  &__title {
+    @extend %manrope-700;
+    font-size: 38px;
+    line-height: 1.26;
+    text-transform: uppercase;
+
+    margin-bottom: 40px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card + .services__card {
+    margin-left: 18px;
+  }
+
+  &__card {
+    text-align: center;
+    
+    &:nth-child(2),
+    &:nth-child(4) {
+      .services__card-name {
+        padding: 0 40px;
+      }
+    }
+  }
+
+  &__card-inner {
+    width: 220px;
+    height: 378px;
+
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+  }
+
+
+  &__card-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @extend %manrope-800;
+    color: $white;
+    text-transform: uppercase;
+
+    background-color: $blue;
+
+    height: 74px;
+    width: 100%;
+    padding: 0 15px;
+
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  &__card-list {
+    background-color: $white;
+    height: 255px;
+    text-align: start;
+
+    padding-top: 18px;
+  }
+
+  &__card-item {
+    margin-bottom: 11px;
+    line-height: 1.5;
+    padding-left: 40px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      background-image: url('../images/icons/check.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: 4px;
+      left: 16px;
+    }
+  }
+
+  &__price-wrapper {
+    padding: 11px 0 11px 16px;
+    background-color: $white;
+    border-radius: 0 0 15px 15px;
+    border-top: 1px solid #E2E2E2;
+  }
+
+  &__price--accent {
+    @extend %accent-text;
+    @extend %manrope-800;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+
+}
 
 
 

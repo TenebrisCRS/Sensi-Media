@@ -1,14 +1,14 @@
 html,
 body {
   height: 100%;
-  background-color: $bg;
 }
 
 body {
-  color: $white;
-  font-size: 20px;
-  line-height: 31px;
-  @extend %fira-400;
+  color: $black;
+  font-size: 16px;
+  line-height: 1.62;
+  @extend %manrope-400;
+  background-color: $bg;
   display: flex;
   flex-direction: column; 
 }
@@ -18,12 +18,31 @@ body {
 }
 
 .container {
-  max-width: 1130px;
+  max-width: 1140px;
   margin: 0px auto;
   padding: 0px 15px;
 }
 
 a {
   text-decoration: none;
-  color: $white;
+  color: $black;
 }
+
+.accent-link {
+  padding: 14px 33px 14px 42px;
+  border-radius: 9px;
+
+  color: $white;
+  background: $accent;
+  @extend %manrope-600;
+
+  outline: transparent;
+  border: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(115.11deg, #db205e 10.12%, #d429a1 100.01%);
+  }
+}
+
+

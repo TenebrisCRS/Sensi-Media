@@ -35,3 +35,10 @@ $bg: #F7F6FF;
   font-family: 'Manrope-ExtraBold', sans-serif;
   font-weight: 800;
 }
+
+%accent-text {
+  background: $accent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

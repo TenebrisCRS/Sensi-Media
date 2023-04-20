@@ -36,6 +36,30 @@
   &__nav-item+.header-top__nav-item {
     margin-left: 30px;
   }
+
+  &__nav-link {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background: $accent;
+      left: 0;
+      bottom: 0;
+
+      opacity: 0;
+      transform: translateY(5px);
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
 }
 
 .header-bottom {
@@ -301,7 +325,7 @@
   }
 
   &__form-textarea {
-    max-width: 100%;
+    max-width: 570px;
     height: 140px;
     resize: none;
     display: block;
@@ -359,22 +383,12 @@
       content: '';
       position: absolute;
       height: 1px;
-      width: 100%;
+      width: 95%;
       background: $accent;
       left: 0;
       bottom: 0;
-
-      opacity: 0;
-      transform: translateY(5px);
-      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     }
 
-    &:hover {
-      &::before {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
   }
 
 
@@ -382,6 +396,184 @@
     object-fit: cover;
     margin-right: -35px;
     border-radius: 20px;
+  }
+}
+
+.portfolio {
+  padding: 50px 0;
+  position: relative;
+
+  &__title {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    max-width: 570px;
+    height: 520px;
+  }
+
+  &__item + .portfolio__item {
+    margin-right: 30px;
+  }
+
+  &__upper-wrapper {
+    padding: 25px;
+    background-color: $white;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__item-img {
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  &__item-text {
+    @extend %manrope-400;
+  }
+
+  &__result {
+    background-color: $bg-accent;
+    padding: 20px 35px 25px 28px;
+  }
+
+  &__result-title {
+    @extend %manrope-800;
+    font-size: 18px;
+    line-height: 1.44;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__result-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__result-item + .portfolio__result-item {
+    margin-left: 29px;
+  }
+
+  &__result-item {
+    max-width: 185px;
+  }
+
+  &__result-percentage {
+    @extend %manrope-800;
+    font-size: 18px;
+    line-height: 1.44;
+  }
+
+  &__result-text {
+    @extend %manrope-400;
+  }
+
+  &__systems {
+    background-color: $white;
+    padding: 25px;
+  }
+
+  &__systems-title {
+    @extend %manrope-800;
+    font-size: 18px;
+    line-height: 1.44;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+  }
+
+  &__systems-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__systems-item + .portfolio__systems-item {
+    margin-left: 16px;
+  }
+
+  &__systems-img {
+    object-fit: cover;
+  }
+
+  .slick-arrow {
+    line-height: 0;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      width: 41px;
+      height: 41px;
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .slick-next {
+    &::before {
+      background-image: url("../images/icons/arrow-right.svg");
+      right: -60px;
+    }
+  }
+
+  .slick-prev {
+    &::before {
+      background-image: url("../images/icons/arrow-left.svg");
+      left: -60px;
+    }
+  }
+}
+
+.footer {
+  background-color: $white;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 68px 0 60px;
+  }
+
+  &__logo-link {
+    margin-bottom: 5px;
+  }
+
+  &__policy {
+    display: block;
+    margin-bottom: 22px;
+    max-width: 200px;
+    text-decoration-line: underline;
+  }
+
+  &__title {
+    margin-bottom: 13px;
+  }
+
+  &__center-link,
+  &__left-text {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .footer__bottom {
+    background-color: #2D2D2D;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    @extend %manrope-400;
+    font-size: 14px;
+    line-height: 2.57;
+    align-items: center;
+    padding: 3px 0;
   }
 }
 

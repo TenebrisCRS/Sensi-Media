@@ -3,6 +3,10 @@ body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: $black;
   font-size: 16px;
@@ -49,4 +53,146 @@ a {
   @extend %manrope-700;
   font-size: 38px;
   line-height: 1.26;
+}
+
+.header-top__menu-icon {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  user-select: none;
+
+  
+}
+
+.header-top__menu-icon path {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: $white;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.header-top__menu-icon .top {
+  stroke-dasharray: 40 172;
+}
+
+.header-top__menu-icon .middle {
+  stroke-dasharray: 40 111;
+}
+
+.header-top__menu-icon .bottom {
+  stroke-dasharray: 40 172;
+}
+
+.header-top__menu-icon.active .top {
+  stroke-dashoffset: -132px;
+}
+
+.header-top__menu-icon.active .middle {
+  stroke-dashoffset: -71px;
+}
+
+.header-top__menu-icon.active .bottom {
+  stroke-dashoffset: -132px;
+}
+
+@keyframes menu-animation {
+  0% {
+    width: 1vw;
+    height: 1vh;
+    opacity: 0%;
+    border-radius: 0% 100% 100% 0%;
+  }
+
+  100% {
+    width: 100vw;
+    height: calc(100vh - 86px);
+    opacity: 100%;
+    border-radius: 0;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  li {
+    padding: 0 5px;
+    line-height: 0;
+    margin-top: 0px;
+    button {
+      padding: 0;
+      font-size: 0;
+      line-height: 0;
+      background-color: transparent;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 1px transparent solid;
+      position: relative;
+      cursor: pointer;
+
+      &::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #a19f9f;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+}
+  &.slick-active {
+      button {
+
+        &::before {
+          background: $accent;
+        }
+      }
+    }
+  }
+}
+
+.services,
+.portfolio,
+.contacts  {
+  padding: 100px 0 50px;
+}
+
+.features__inner,
+.services__cards,
+.portfolio__list {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: transform 0.4s ease-in, opacity 0.3s ease-in;
+}
+
+.header-bottom__img,
+.contacts__img {
+  transform: translateX(200px);
+  opacity: 0;
+  transition: transform 0.4s ease-in, opacity 0.3s ease-in;
+}
+
+.header-bottom__content-box,
+.services__title,
+.contacts__content-box,
+.portfolio__title {
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: transform 0.4s ease-in, opacity 0.3s ease-in;
+}
+
+.features__inner.active,
+.header-bottom__img.active,
+.header-bottom__content-box.active,
+.services__title.active,
+.services__cards.active,
+.contacts__content-box.active,
+.contacts__img.active,
+.portfolio__title.active,
+.portfolio__list.active {
+  transform: translate(0);
+  opacity: 1;
 }

@@ -8,6 +8,11 @@
 .header-top {
   background-color: $white;
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  
 
   &__inner {
     display: flex;
@@ -60,10 +65,29 @@
       }
     }
   }
+
+  &__menu-btn {
+    background: $accent;
+    border: none;
+    border-radius: 10px;
+    outline: transparent;
+
+    width: 60px;
+    height: 60px;
+
+    position: relative;
+    display: none;
+  }
+
+  &__menu-icon {
+    position: absolute;
+    top: -11px;
+    left: -9px;
+  }
 }
 
 .header-bottom {
-  padding: 80px 0 90px;
+  padding: 160px 0 90px;
 
   &__inner {
     display: flex;
@@ -98,14 +122,20 @@
   &__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
 
-  &__item+.header-bottom__item {
+  &__item + .header-bottom__item {
     margin-left: 10px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
   }
 
   &__item-text {
     color: $white;
+    white-space: nowrap;
 
     background-color: $blue;
     border-radius: 250px;
@@ -124,9 +154,7 @@
   }
 
   &__img {
-    max-width: 573px;
     object-fit: cover;
-    margin-right: -50px;
   }
 }
 
@@ -140,6 +168,9 @@
 
   &__title {
     margin-bottom: 33px;
+    @extend %manrope-700;
+    font-size: 38px;
+    line-height: 1.26;
   }
 
   &__list {
@@ -177,8 +208,6 @@
 }
 
 .services {
-  padding: 76px 0;
-
   &__title {
     text-transform: uppercase;
 
@@ -190,9 +219,9 @@
     justify-content: space-between;
   }
 
-  &__card + .services__card {
-    margin-left: 18px;
-  }
+  // &__card + .services__card {
+  //   margin-left: 18px;
+  // }
 
   &__card {
     text-align: center;
@@ -269,7 +298,7 @@
   }
 
   &__price--accent {
-    @extend %accent-text;
+    @extend %accent-text; 
     @extend %manrope-800;
     font-size: 30px;
     line-height: 1.2;
@@ -277,16 +306,10 @@
 }
 
 .contacts {
-  padding: 50px 0;
-
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  &__content-box {
-
   }
 
   &__title {
@@ -394,14 +417,18 @@
 
   &__img {
     object-fit: cover;
-    margin-right: -35px;
     border-radius: 20px;
   }
 }
 
 .portfolio {
-  padding: 50px 0;
   position: relative;
+
+  &__inner {
+    padding: 0 20px 0 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 
   &__title {
     margin-bottom: 40px;
@@ -522,7 +549,7 @@
   .slick-next {
     &::before {
       background-image: url("../images/icons/arrow-right.svg");
-      right: -60px;
+      right: -20px;
     }
   }
 

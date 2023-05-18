@@ -15,7 +15,11 @@
       <div class="container">
         <div class="header-top__inner">
           <a class="header-top__logo-link" href="#body">
-            <img class="header-top__logo-img" src="images/logo.webp" style="max-width: 325px;" alt="Картинка логотипа">
+            <picture>
+              <source srcset="images/dist/logo.avif">
+              <source srcset="images/dist/logo.webp">
+              <img class="header-top__logo-img" src="images/dist/logo.png" width="325px" alt="Картинка логотипа">
+            </picture>
           </a>
 
           <nav class="header-top__nav">
@@ -53,6 +57,7 @@
               <path class="bottom"
                 d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
             </svg>
+            <span class="sr-only">Кнопка меню</span>
           </button>
 
           <a class="header-top__btn accent-link" href="#contacts">
@@ -93,8 +98,7 @@
               </li>
             </ul>
           </div>
-
-          <img class="header-bottom__img" src="images/header-img.svg" style="max-width: 573px;"
+          <img class="header-bottom__img" src="images/dist/sprite.svg#header-img" width="573px"
             alt="Картинка с этапами разработки дизайна">
         </div>
       </div>
@@ -344,8 +348,7 @@
               <button class="contacts__form-btn accent-link" type="submit">Отправить</button>
             </form>
           </div>
-
-          <img class="contacts__img" src="images/contacts-img.svg" style="max-width: 570px;" alt="Картинка контактов">
+          <img class="contacts__img" src="images/dist/sprite.svg#contacts-img" width="570px" alt="Картинка контактов">
         </div>
       </div>
     </section>
@@ -359,8 +362,7 @@
         <ul class="portfolio__list">
           <li class="portfolio__item">
             <div class="portfolio__upper-wrapper">
-              <img class="portfolio__item-img" style="max-width: 150px;" src="images/portfolio/1.svg"
-                alt="Логотип компании Alibaba">
+              <img class="portfolio__item-img" width="150px" height="100px" src="images/dist/sprite.svg#portfolio--1" alt="Логотип компании Alibaba">
               <p class="portfolio__item-text">
                 Самая крупная в Финляндии компания по обработке камня
                 и крупнейший в мире производитель теплоаккумулирующих печей
@@ -409,12 +411,18 @@
 
               <ul class="portfolio__systems-list">
                 <li class="portfolio__systems-item">
-                  <img class="portfolio__systems-img" style="max-width: 101px" src="images/portfolio/google.webp"
-                    alt="Картинка Google Adwords">
+                    <picture>
+                      <source srcset="images/dist/portfolio/google.avif">
+                      <source srcset="images/dist/portfolio/google.webp">
+                      <img class="portfolio__systems-img" width="100px" src="images/portfolio/dist/google.png" alt="Картинка Google Adwords">
+                    </picture>
                 </li>
                 <li class="portfolio__systems-item">
-                  <img class="portfolio__systems-img" style="max-width: 150px" src="images/portfolio/yandex.webp"
-                    alt="Картинка Yandex Direct">
+                    <picture>
+                      <source srcset="images/dist/portfolio/yandex.avif">
+                      <source srcset="images/dist/portfolio/yandex.webp">
+                      <img class="portfolio__systems-img" width="150px" src="images/portfolio/yandex.png" alt="Картинка Yandex Direct">
+                    </picture>
                 </li>
               </ul>
             </div>
@@ -422,8 +430,7 @@
 
           <li class="portfolio__item">
             <div class="portfolio__upper-wrapper">
-              <img class="portfolio__item-img" style="max-width: 225px;" src="images/portfolio/2.svg"
-                alt="Логотип компании macys">
+              <img class="portfolio__item-img" width="225px" height="100px" src="images/dist/sprite.svg#portfolio--2" alt="Логотип компании macys">
               <p class="portfolio__item-text">
                 Самая крупная в Финляндии компания по обработке камня
                 и крупнейший в мире производитель теплоаккумулирующих печей
@@ -473,12 +480,18 @@
 
               <ul class="portfolio__systems-list">
                 <li class="portfolio__systems-item">
-                  <img class="portfolio__systems-img" style="max-width: 101px" src="images/portfolio/google.webp"
-                    alt="Картинка Google Adwords">
+                  <picture>
+                    <source srcset="images/dist/portfolio/google.avif">
+                    <source srcset="images/dist/portfolio/google.webp">
+                    <img class="portfolio__systems-img" width="100px" src="images/portfolio/dist/google.png" alt="Картинка Google Adwords">
+                  </picture>
                 </li>
                 <li class="portfolio__systems-item">
-                  <img class="portfolio__systems-img" style="max-width: 150px" src="images/portfolio/yandex.webp"
-                    alt="Картинка Yandex Direct">
+                  <picture>
+                    <source srcset="images/dist/portfolio/yandex.avif">
+                    <source srcset="images/dist/portfolio/yandex.webp">
+                    <img class="portfolio__systems-img" width="150px" src="images/portfolio/yandex.png" alt="Картинка Yandex Direct">
+                  </picture>
                 </li>
               </ul>
             </div>
@@ -486,8 +499,7 @@
 
           <li class="portfolio__item">
             <div class="portfolio__upper-wrapper">
-              <img class="portfolio__item-img" style="max-width: 150px;" src="images/portfolio/1.svg"
-                alt="Логотип компании Alibaba">
+              <img class="portfolio__item-img" width="150px" height="100px" src="images/dist/sprite.svg#portfolio--1" alt="Логотип компании Alibaba">
               <p class="portfolio__item-text">
                 Самая крупная в Финляндии компания по обработке камня
                 и крупнейший в мире производитель теплоаккумулирующих печей
@@ -537,12 +549,18 @@
 
               <ul class="portfolio__systems-list">
                 <li class="portfolio__systems-item">
-                  <img class="portfolio__systems-img" style="max-width: 101px" src="images/portfolio/google.webp"
-                    alt="Картинка Google Adwords">
+                  <picture>
+                    <source srcset="images/dist/portfolio/google.avif">
+                    <source srcset="images/dist/portfolio/google.webp">
+                    <img class="portfolio__systems-img" width="100px" src="images/portfolio/dist/google.png" alt="Картинка Google Adwords">
+                  </picture>
                 </li>
                 <li class="portfolio__systems-item">
-                  <img class="portfolio__systems-img" style="max-width: 150px" src="images/portfolio/yandex.webp"
-                    alt="Картинка Yandex Direct">
+                  <picture>
+                    <source srcset="images/dist/portfolio/yandex.avif">
+                    <source srcset="images/dist/portfolio/yandex.webp">
+                    <img class="portfolio__systems-img" width="150px" src="images/portfolio/yandex.png" alt="Картинка Yandex Direct">
+                  </picture>
                 </li>
               </ul>
             </div>
@@ -550,8 +568,7 @@
 
           <li class="portfolio__item">
             <div class="portfolio__upper-wrapper">
-              <img class="portfolio__item-img" style="max-width: 225px;" src="images/portfolio/2.svg"
-                alt="Логотип компании macys">
+              <img class="portfolio__item-img" width="225px" height="100px" src="images/dist/sprite.svg#portfolio--2" alt="Логотип компании macys">
               <p class="portfolio__item-text">
                 Самая крупная в Финляндии компания по обработке камня
                 и крупнейший в мире производитель теплоаккумулирующих печей
@@ -601,12 +618,18 @@
 
               <ul class="portfolio__systems-list">
                 <li class="portfolio__systems-item">
-                  <img class="portfolio__systems-img" style="max-width: 101px" src="images/portfolio/google.webp"
-                    alt="Картинка Google Adwords">
+                  <picture>
+                    <source srcset="images/dist/portfolio/google.avif">
+                    <source srcset="images/dist/portfolio/google.webp">
+                    <img class="portfolio__systems-img" width="100px" src="images/portfolio/dist/google.png" alt="Картинка Google Adwords">
+                  </picture>
                 </li>
                 <li class="portfolio__systems-item">
-                  <img class="portfolio__systems-img" style="max-width: 150px" src="images/portfolio/yandex.webp"
-                    alt="Картинка Yandex Direct">
+                  <picture>
+                    <source srcset="images/dist/portfolio/yandex.avif">
+                    <source srcset="images/dist/portfolio/yandex.webp">
+                    <img class="portfolio__systems-img" width="150px" src="images/portfolio/yandex.png" alt="Картинка Yandex Direct">
+                  </picture>
                 </li>
               </ul>
             </div>
@@ -614,8 +637,7 @@
 
           <li class="portfolio__item">
             <div class="portfolio__upper-wrapper">
-              <img class="portfolio__item-img" style="max-width: 150px;" src="images/portfolio/1.svg"
-                alt="Логотип компании Alibaba">
+              <img class="portfolio__item-img" width="150px" height="100px" src="images/dist/sprite.svg#portfolio--1" alt="Логотип компании Alibaba">
               <p class="portfolio__item-text">
                 Самая крупная в Финляндии компания по обработке камня
                 и крупнейший в мире производитель теплоаккумулирующих печей
@@ -665,12 +687,18 @@
 
               <ul class="portfolio__systems-list">
                 <li class="portfolio__systems-item">
-                  <img class="portfolio__systems-img" style="max-width: 101px" src="images/portfolio/google.webp"
-                    alt="Картинка Google Adwords">
+                  <picture>
+                    <source srcset="images/dist/portfolio/google.avif">
+                    <source srcset="images/dist/portfolio/google.webp">
+                    <img class="portfolio__systems-img" width="100px" src="images/portfolio/dist/google.png" alt="Картинка Google Adwords">
+                  </picture>
                 </li>
                 <li class="portfolio__systems-item">
-                  <img class="portfolio__systems-img" style="max-width: 150px" src="images/portfolio/yandex.webp"
-                    alt="Картинка Yandex Direct">
+                  <picture>
+                    <source srcset="images/dist/portfolio/yandex.avif">
+                    <source srcset="images/dist/portfolio/yandex.webp">
+                    <img class="portfolio__systems-img" width="150px" src="images/portfolio/yandex.png" alt="Картинка Yandex Direct">
+                  </picture>
                 </li>
               </ul>
             </div>
@@ -678,8 +706,7 @@
 
           <li class="portfolio__item">
             <div class="portfolio__upper-wrapper">
-              <img class="portfolio__item-img" style="max-width: 225px;" src="images/portfolio/2.svg"
-                alt="Логотип компании macys">
+              <img class="portfolio__item-img" width="225px" height="100px" src="images/dist/sprite.svg#portfolio--2" alt="Логотип компании macys">
               <p class="portfolio__item-text">
                 Самая крупная в Финляндии компания по обработке камня
                 и крупнейший в мире производитель теплоаккумулирующих печей
@@ -729,12 +756,18 @@
 
               <ul class="portfolio__systems-list">
                 <li class="portfolio__systems-item">
-                  <img class="portfolio__systems-img" style="max-width: 101px" src="images/portfolio/google.webp"
-                    alt="Картинка Google Adwords">
+                  <picture>
+                    <source srcset="images/dist/portfolio/google.avif">
+                    <source srcset="images/dist/portfolio/google.webp">
+                    <img class="portfolio__systems-img" width="100px" src="images/portfolio/dist/google.png" alt="Картинка Google Adwords">
+                  </picture>
                 </li>
                 <li class="portfolio__systems-item">
-                  <img class="portfolio__systems-img" style="max-width: 150px" src="images/portfolio/yandex.webp"
-                    alt="Картинка Yandex Direct">
+                  <picture>
+                    <source srcset="images/dist/portfolio/yandex.avif">
+                    <source srcset="images/dist/portfolio/yandex.webp">
+                    <img class="portfolio__systems-img" width="150px" src="images/portfolio/yandex.png" alt="Картинка Yandex Direct">
+                  </picture>
                 </li>
               </ul>
             </div>
@@ -750,7 +783,11 @@
         <ul class="footer__left-list">
           <li class="footer__left-item">
             <a class="footer__logo-link" href="#body">
-              <img src="images/logo.webp" alt="Картинка логотипа">
+              <picture>
+                <source srcset="images/dist/logo.avif">
+                <source srcset="images/dist/logo.webp">
+                <img class="header-top__logo-img" src="images/dist/logo.png" width="325px" alt="Картинка логотипа">
+              </picture>
             </a>
           </li>
           <li class="footer__left-item">
@@ -773,28 +810,28 @@
             </h3>
           </li>
           <li class="footer__center-item">
-            <a class="footer__center-link" href="#">
+            <a class="footer__center-link" href="#body">
               Главная
             </a>
           </li>
           <li class="footer__center-item">
-            <a class="footer__center-link" href="#">
+            <a class="footer__center-link" href="#services">
               Услуги
             </a>
           </li>
           <li class="footer__center-item">
-            <a class="footer__center-link" href="#">
+            <a class="footer__center-link" href="#portfolio">
               Наши работы
             </a>
           </li>
           <li class="footer__center-item">
-            <a class="footer__center-link" href="#">
+            <a class="footer__center-link" href="#contacts">
               Контакты
             </a>
           </li>
         </ul>
 
-        
+
         <ul class="footer__right-list">
           <li class="footer__right-item">
             <h3 class="footer__title">

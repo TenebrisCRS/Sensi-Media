@@ -281,7 +281,7 @@
       width: 18px;
       height: 18px;
       position: absolute;
-      background-image: url('../images/icons/check.svg');
+      background-image: url('../images/dist/sprite.svg#icons--check');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -362,7 +362,7 @@
       &::before {
         content: '';
 
-        background-image: url('../images/icons/check-form.svg');
+        background-image: url('../images/dist/sprite.svg#icons--check-form');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -548,14 +548,14 @@
 
   .slick-next {
     &::before {
-      background-image: url("../images/icons/arrow-right.svg");
+      background-image: url("../images/dist/sprite.svg#icons--arrow-right");
       right: -20px;
     }
   }
 
   .slick-prev {
     &::before {
-      background-image: url("../images/icons/arrow-left.svg");
+      background-image: url("../images/dist/sprite.svg#icons--arrow-left");
       left: -60px;
     }
   }
